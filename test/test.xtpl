@@ -1,0 +1,20 @@
+{{extend ("./parent")}}
+
+{{#block ("head")}}
+    <link type="text/css" href="test.css" rev="stylesheet" rel="stylesheet"/>
+{{/block}}
+
+{{#block ("body")}}
+    <h2>{{title}}</h2>
+{{/block}}
+
+{{#if (condition)}}
+    
+{{/if}}
+{{#if (condition1)}}
+    body1
+{{elseif (condition2)}}
+    body2
+{{else}}
+    
+{{/if}}

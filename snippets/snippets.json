@@ -1,0 +1,133 @@
+{    
+    "set": {
+        "prefix": "set",
+        "body": [
+            "{{set (${identity} = ${expression})}}"
+        ],
+        "description": "set statement"
+    },
+    "include": {
+        "prefix": "include",
+        "body": [
+            "{{include (${path})}}"
+        ],
+        "description": "include statement"
+    },
+    "require": {
+        "prefix": "require",
+        "body": [
+            "{{require (${path})}}"
+        ],
+        "description": "require statement"
+    },
+    "block": {
+        "prefix": "block",
+        "body": [
+            "{{{block (${identity})}}}"
+        ],
+        "description": "block statement"
+    },
+    "#block": {
+        "prefix": "#block",
+        "body": [
+            "{{{#block (${identity})}}}",
+            "\t$0",
+            "{{{/block}}}"
+        ],
+        "description": "#block statement"
+    },
+    "extend": {
+        "prefix": "extend",
+        "body": [
+            "{{extend (${path})}}"
+        ],
+        "description": "extend statement"
+    },
+    "each": {
+        "prefix": "each",
+        "body": [
+            "{{#each (${list})}}",
+            "\t$0",
+            "{{/each}}"
+        ],
+        "description": "each statement"
+    },
+    "eachkv": {
+        "prefix": "eachkv",
+        "body": [
+            "{{#each (${list}, \"${value}\", \"${key}\")}}",
+            "\t$0",
+            "{{/each}}"
+        ],
+        "description": "each dictionary statement"
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "{{#if (${condition})}}",
+            "\t$0",
+            "{{/if}}"
+        ],
+        "description": "if statement"
+    },
+    "ifelse": {
+        "prefix": "ifelse",
+        "body": [
+            "{{#if (${condition})}}",
+            "\t${body}",
+            "{{else}}",
+            "\t$0",
+            "{{/if}}"
+        ],
+        "description": "if-else statement"
+    },
+    "ifelseif": {
+        "prefix": "ifelseif",
+        "body": [
+            "{{#if (${condition})}}",
+            "\t${body}",
+            "{{elseif (${else_condition})}}",
+            "\t$0",
+            "{{/if}}"
+        ],
+        "description": "if-else-if statement"
+    },
+    "ifelseifelse": {
+        "prefix": "ifee",
+        "body": [
+            "{{#if (${condition1})}}",
+            "\t${body1}",
+            "{{elseif (${condition2})}}",
+            "\t${body2}",
+            "{{else}}",
+            "\t$0",
+            "{{/if}}"
+        ],
+        "description": "if-elseif-else statement"
+    },
+    "with": {
+        "prefix": "with",
+        "body": [
+            "{{#with (${identity})}}",
+            "\t$0",
+            "{{/with}}"
+        ],
+        "description": "with statement"
+    },
+    "#macro": {
+        "prefix": "#macro",
+        "body": [
+            "{{#macro (\"${identity}\" ,${parameters})}}",
+            "\t$0",
+            "{{/macro}}"
+        ],
+        "description": "macro define"
+    },
+    "macro": {
+        "prefix": "macro",
+        "body": [
+            "{{macro (\"${identity}\" ,${arguments})}}"            
+        ],
+        "description": "macro define"
+    }
+}
