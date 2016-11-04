@@ -2,7 +2,7 @@
     "name": "xtemplate",
     "displayName": "XTemplate Language",
     "description": "Best XTemplate language extension for VSCode",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "publisher": "bakso",
     "engines": {
         "vscode": "^1.5.0"
@@ -45,6 +45,7 @@
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
+    "icon": "icon.png",
     "devDependencies": {
         "typescript": "^2.0.3",
         "vscode": "^1.0.0",
