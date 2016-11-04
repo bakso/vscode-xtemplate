@@ -10,4 +10,4 @@ After you install you will see.
 
 ### Snippets
 
-See snippets.json.
+See [snippets.json](https://github.com/bakso/vscode-xtemplate/blob/master/snippets/snippets.json).

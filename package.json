@@ -2,7 +2,7 @@
     "name": "xtemplate",
     "displayName": "XTemplate Language",
     "description": "Best XTemplate language extension for VSCode",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "bakso",
     "engines": {
         "vscode": "^1.5.0"
