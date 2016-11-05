@@ -1078,7 +1078,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>text.html.xtpl</string>
+	<string>text.xtpl.html</string>
 	<key>uuid</key>
 	<string>943ddb17-08ae-4254-86a6-02b3fccfa3ae</string>
 </dict>

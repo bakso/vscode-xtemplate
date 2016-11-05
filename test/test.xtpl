@@ -1,16 +1,29 @@
-{{extend ("./parent")}}
+{{{#block (identity)}}}
+    
+{{{/block}}}
 
-{{#block ("head")}}
-    <link type="text/css" href="test.css" rev="stylesheet" rel="stylesheet"/>
-{{/block}}
+{{{block (identity)}}}
 
-{{#block ("body")}}
-    <h2>{{title}}</h2>
-{{/block}}
+{{#each (list)}}
+    
+{{/each}}
+
+{{#each (dictionary, "value", "key")}}
+    
+{{/each}}
 
 {{#if (condition)}}
+    body
+{{else}}
     
 {{/if}}
+
+{{#if (condition)}}
+    body
+{{else}}
+    
+{{/if}}
+
 {{#if (condition1)}}
     body1
 {{elseif (condition2)}}
@@ -18,3 +31,33 @@
 {{else}}
     
 {{/if}}
+
+{{#with (identity)}}
+    
+{{/with}}
+
+{{set (identity = "11")}}
+
+{{require ("./abc")}}
+
+{{include ('./abc')}}
+
+{{extend ('.abc')}}
+
+{{#macro ("identity" ,parameters)}}
+    
+{{/macro}}
+
+{{macro ("identity" ,arguments)}}
+
+
+<div class="style1">
+    <ul class="foo">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+
+

@@ -55,7 +55,7 @@
     "eachkv": {
         "prefix": "eachkv",
         "body": [
-            "{{#each (${list}, \"${value}\", \"${key}\")}}",
+            "{{#each (${dictionary}, \"${value}\", \"${key}\")}}",
             "\t$0",
             "{{/each}}"
         ],
