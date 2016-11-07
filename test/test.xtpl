@@ -1,8 +1,10 @@
+{{! abc }}
+
 {{{#block (identity)}}}
-    
+<h1>This is Header</h1>   
 {{{/block}}}
 
-{{{block (identity)}}}
+{{{block ("./abc")}}}
 
 {{#each (list)}}
     
@@ -12,10 +14,7 @@
     
 {{/each}}
 
-{{#if (condition)}}
-    body
-{{else}}
-    
+{{#if (condition === "abc")}}    
 {{/if}}
 
 {{#if (condition)}}
@@ -50,7 +49,6 @@
 
 {{macro ("identity" ,arguments)}}
 
-
 <div class="style1">
     <ul class="foo">
         <li></li>
@@ -59,5 +57,25 @@
     </ul>
 </div>
 
+<script>
+alert('1');
+let abc = 1;
+let b = 0;
+class Foo {
 
+}
+let c = new Foo();
+</script>
+
+<script type="text/template">
+{{%
+<div class="style1">
+    <ul class="foo">
+    {{#each (list)}}
+        <li key="{{xindex}}">{{{this}}}</li>
+    {{/each}}
+    </ul>
+</div>
+%}}
+</script>
 

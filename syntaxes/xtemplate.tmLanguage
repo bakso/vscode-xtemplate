@@ -110,12 +110,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.constant.xtpl</string>
+					<string>entity.name.tag.xtpl</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>support.constant.xtpl</string>
+					<string>entity.name.tag.xtpl</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -199,7 +199,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>end_block</key>
+		<key>end_block</key>		
 		<dict>
 			<key>begin</key>
 			<string>(\{\{~?/)([a-zA-Z0-9_\.-]+)\s*</string>
@@ -1078,7 +1078,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>text.xtpl.html</string>
+	<string>text.html.xtpl</string>
 	<key>uuid</key>
 	<string>943ddb17-08ae-4254-86a6-02b3fccfa3ae</string>
 </dict>

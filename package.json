@@ -1,41 +1,41 @@
 {
     "name": "xtemplate",
-    "displayName": "XTemplate Language",
+    "displayName": "xtemplate",
     "description": "Best XTemplate language extension for VSCode",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "publisher": "bakso",
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.5.0"
     },
     "categories": [
-        "Languages",
-        "Snippets",
         "Other"
     ],
-    "activationEvents": [],
-    "main": "./extension",
-    "contributes": {
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {        
         "languages": [
-            {
-                "id": "xtemplate",
-                "aliases": [
-                    "xtemplate",
-                    "xtpl"
-                ],
-                "extensions": [
-                    ".xtpl"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "xtemplate",
-                "scopeName": "text.xtpl.html",
-                "path": "./syntaxes/xtemplate.tmLanguage"
-            }
-        ],
-        "snippets": [
+			{
+				"id": "xtemplate",
+				"aliases": [
+					"xtpl"
+    			],
+				"extensions": [
+					".xtpl"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "xtemplate",
+				"scopeName": "text.html.xtpl",
+				"path": "./syntaxes/xtemplate.json"
+			}
+		],
+		"snippets": [
             {
                 "language": "xtemplate",
                 "path": "./snippets/snippets.json"
@@ -43,14 +43,14 @@
         ]
     },
     "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
-    "icon": "icon.png",
     "devDependencies": {
         "typescript": "^2.0.3",
         "vscode": "^1.0.0",
         "mocha": "^2.3.3",
-        "eslint": "^3.6.0",
         "@types/node": "^6.0.40",
         "@types/mocha": "^2.2.32"
     }
