@@ -94,7 +94,7 @@
             ]
         },
         {
-            "begin": "(\\{\\{\\{?)\\s*(include|set|require|void|parse|extend|use|block|macro)\\s*",
+            "begin": "(\\{\\{\\{?)\\s*(include|set|require|void|parse|extend|use|block|macro)\\s*\\(",
             "beginCaptures": {
                 "1": {
                     "name": "entity.name.tag.xtpl"
@@ -188,10 +188,10 @@
                     "match": "(?<!\\.)\\b(true|false)(?!\\s*:)\\b|(?<=\\?)(?:\\s*)(true|false)(?=\\s*:)",
                     "captures": {
                         "1": {
-                            "name": "constant.language.boolean.$1.xtpl"
+                            "name": "support.variable.function.xtpl"
                         },
                         "2": {
-                            "name": "constant.language.boolean.$2.xtpl"
+                            "name": "support.variable.function.xtpl"
                         }
                     }
                 }
@@ -234,11 +234,7 @@
                 {
                     "match": ",",
                     "name": "meta.object.delimiter.xtpl"
-                },
-                {
-                    "match": "=",
-                    "name": "keyword.operator.assignment.xtpl"
-                },
+                },                
                 {
                     "match": "[a-zA-Z_$][a-zA-Z_$0-9]*",
                     "name": "variable.parameter.function.xtpl"
