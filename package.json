@@ -2,7 +2,7 @@
     "name": "xtemplate",
     "displayName": "xtemplate",
     "description": "Best XTemplate language extension for VSCode",
-    "version": "0.2.5",
+    "version": "0.2.6",
     "publisher": "bakso",
     "icon": "logo.png",
     "engines": {
